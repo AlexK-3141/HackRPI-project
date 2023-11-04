@@ -12,11 +12,13 @@ def open_url():
     url = "https://www.oprahdaily.com/life/health/a27507222/how-to-stop-being-sad/"
     webbrowser.open(url)
     
-window = tk.Tk()
-window.title("Sad")
+root = tk.Tk()
+root.title("Therapy (Pseudo)Chatbot")
+window = tk.Frame(root)
+window.grid()
 
-greeting = tk.Label(text="Hi! How do you feel today?")
-greeting.pack()
+greeting = tk.Label(text="Hi! On a scale of 1-10, how are you feeling today?").grid(columnspan=2, padx=20, pady=20, row=1)
+
 
 button1 = tk.Button(
     window,
@@ -26,9 +28,8 @@ button1 = tk.Button(
     bg="purple",
     fg="yellow",
     command=open_url
-    )
+    ).grid(column=0, row=2)
 
-button1.pack()
   
 button2 = tk.Button(
     window,
@@ -36,10 +37,9 @@ button2 = tk.Button(
     width=10,
     height=5,
     command=open_url
-    )
+    ).grid(column=1, row=2)
 
 
-button2.pack()
 
 #URL that will open if user says "sad"
 #url = "https://www.oprahdaily.com/life/health/a27507222/how-to-stop-being-sad/"

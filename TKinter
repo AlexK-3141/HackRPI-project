@@ -1,0 +1,55 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Nov  4 15:20:32 2023
+
+@author: Kaitl
+"""
+
+import webbrowser
+import tkinter as tk
+
+def open_url():
+    url = "https://www.oprahdaily.com/life/health/a27507222/how-to-stop-being-sad/"
+    webbrowser.open(url)
+    
+window = tk.Tk()
+window.title("Sad")
+
+greeting = tk.Label(text="Hi! How do you feel today?")
+greeting.pack()
+
+button1 = tk.Button(
+    window,
+    text="Sad",
+    width=10,
+    height=5, 
+    bg="purple",
+    fg="yellow",
+    command=open_url
+    )
+
+button1.pack()
+  
+button2 = tk.Button(
+    window,
+    text="Happy",
+    width=10,
+    height=5,
+    command=open_url
+    )
+
+
+button2.pack()
+
+#URL that will open if user says "sad"
+#url = "https://www.oprahdaily.com/life/health/a27507222/how-to-stop-being-sad/"
+
+#print("Hi! I hope you're doing well!")
+
+# user input is sad
+#user_input = input("How are you feeling?:")
+
+#if user_input.lower() == "sad":
+    #webbrowser.open(url)
+    
+window.mainloop()

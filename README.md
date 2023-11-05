@@ -1,1 +1,2 @@
-# HackRPI-project chat bot thing for health care workers
+# HackRPI project
+therapist chatbot thing

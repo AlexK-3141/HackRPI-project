@@ -8,10 +8,12 @@ Created on Sat Nov  4 15:20:32 2023
 import webbrowser
 import tkinter as tk
 
+
 def open_url():
     url = "https://www.oprahdaily.com/life/health/a27507222/how-to-stop-being-sad/"
     webbrowser.open(url)
     
+
 root = tk.Tk()
 root.title("Therapy (Pseudo)Chatbot")
 window = tk.Frame(root)
@@ -20,25 +22,24 @@ window.grid()
 greeting = tk.Label(text="Hi! On a scale of 1-10, how are you feeling today?").grid(columnspan=2, padx=20, pady=20, row=1)
 
 
-button1 = tk.Button(
-    window,
-    text="Sad",
-    width=10,
-    height=5, 
-    bg="purple",
-    fg="yellow",
-    command=open_url
-    ).grid(column=0, row=2)
+#button1 = tk.Button(
+    # window,
+    # text="Sad",
+    # width=10,
+    # height=5, 
+    # bg="purple",
+    # fg="yellow",
+    # command=open_url
+    # ).grid(column=0, row=2)
 
   
-button2 = tk.Button(
-    window,
-    text="Happy",
-    width=10,
-    height=5,
-    command=open_url
-    ).grid(column=1, row=2)
-
+#button2 = tk.Button(
+    # window,
+    # text="Happy",
+    # width=10,
+    # height=5,
+    # command=open_url
+    # ).grid(column=1, row=2)
 
 
 #URL that will open if user says "sad"
